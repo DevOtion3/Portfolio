@@ -13,28 +13,29 @@
 </head>
 
 <body>
+    <div class="container">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    </div>
     <main>
-
-        <header>
-
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Tony Leva</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link" href="#introduction">Présentation</a>
-                            <a class="nav-link" href="#experiences">Expériences</a>
-                            <a class="nav-link" href="https://github.com/DevOtion3?tab=repositories"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Tony Leva</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#introduction">Présentation</a>
+                        <a class="nav-link" href="#experiences">Expériences</a>
+                        <a class="nav-link" href="https://github.com/DevOtion3?tab=repositories"><i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
+        <header>
             <div class="container-fluid">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -69,14 +70,13 @@
                             essentielle : mais, comment fonctionne un site internet ?
                             C'est don en partant de cette question que j'ai commencé à apprendre le HTML en autodidacte
                             et que j'ai décidé de faire une première formation de 8 mois pour apprendre à coder un site
-                            itnernet.
+                            internet.
                             <br>
                             Partant de rien, je n'ai malheureusement pas pu avoir le titre professionnel car j'avais
-                            encore trop de lacune. J'ai donc repassé une année à faire des petits boulots en attendant
+                            encore trop de lacunes. J'ai donc repassé une année à faire des petits boulots en attendant
                             de trouve rune autre formation pour combler ces lacunes.
                             C'est ainsi que je début ma formation chez Webforce3 dans l'optique d'avoir le niveau
                             suffisant pour intégrer une entreprise pour y faire mes armes.
-
                         </p>
                     </div>
                     <div class="col-md-6 col-sm-12">
@@ -105,7 +105,6 @@
                             Et pour finir, j'ai du mettre en place un module de chat en direct via un plugin à intégrer
                             sur le site wordpress de l'agence directement.
                         </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
                 <div class="card col-md-4 col-sm-12" style="width: 18rem;">
@@ -114,7 +113,6 @@
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
                 <div class="card col-md-4 col-sm-12" style="width: 18rem;">
@@ -123,29 +121,26 @@
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
         </div>
-
         <footer>
             <div class="row">
-            <div class="container-fluid"></div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                
-                    
-                        <div class="col-md-12 col-sm-12">
-                            <p class="title" id="foot-text">© Tony Leva - Webforce3</p>
-                        </div>
+                <div class="container-fluid"></div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="col-md-12 col-sm-12">
+                        <p class="title" id="foot-text">© Tony Leva - Webforce3</p>
                     </div>
-                </div>
+            </div>
+            </div>
             </nav>
         </footer>
     </main>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+</script>
+<script src="assets/js/function.js" crossorigin="anonymous">
 </script>
 
 </html>
