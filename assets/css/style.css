@@ -2,9 +2,24 @@
     margin: 0;
     padding: 0;
 }
+::-webkit-scrollbar{
+    width:15px;
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    border: 1PX solid;
+    border-color: whitesmoke;
+    background-color: #ffa42c;
+    box-shadow: inset 0 0 6px rgba(255, 252, 252, 0.5);
+  }
+  ::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, rgb(255, 175, 83) 1%, rgba(255, 255, 255, 0.89) 50%, rgb(195, 131, 238) 100%);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.4);
+  }
 
 body {
-    background-color: rgba(20, 5, 36, 0.973);
+    background: linear-gradient(180deg, rgba(151,62,181,1) 1%, rgba(96,14,95,1) 50%, rgba(255,189,75,1) 100%);
 }
 
 a {
@@ -48,6 +63,11 @@ p {
     border: 2px solid;
     border-radius: 80px;
     border-color: whitesmoke;
+    transition: box-shadow .3s !important; 
+}
+
+#portrait:hover{
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.678) !important; 
 }
 
 @media screen and (min-width : 240px) and (max-width : 780px) {
@@ -77,6 +97,16 @@ p {
     font-size: 400px;
 }
 
+
+    /* initiate animation */
+
+@keyframes reverse { /* with this, we create the animation */
+    0% {background-image: linear-gradient(90deg, rgba(151,62,181,1) 1%, rgba(96,14,95,1) 50%, rgba(255,189,75,1) 100%);}
+    25% {background-image: linear-gradient(90deg, rgba(255,189,75,1) 25%, rgba(96,14,95,1) 50%, rgba(151,62,181,1) 75%);}
+    50% {background-image: linear-gradient(90deg, rgba(255,189,75,1) 50%, rgba(96,14,95,1) 50%, rgba(151,62,181,1) 50%);}
+    75% {background-image: linear-gradient(90deg, rgba(255,189,75,1) 75%, rgba(96,14,95,1) 50%, rgba(151,62,181,1) 25%);}
+    100% {background-image: linear-gradient(90deg, rgba(255,189,75,1) 100%, rgba(96,14,95,1) 50%, rgba(151,62,181,1) 1%);}
+}
 #myBtn {
     display: none;
     /* Hidden by default */
@@ -92,7 +122,8 @@ p {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: rgb(76, 0, 121);
+    background-image: linear-gradient(90deg, rgba(151,62,181,1) 1%, rgba(96,14,95,1) 50%, rgba(255,189,75,1) 100%);
+
     /* Set a background color */
     color: whitesmoke;
     /* Text color */
@@ -106,9 +137,17 @@ p {
     /* Increase font size */
 }
 
+.card {
+    transition: box-shadow .3s !important; 
+  }
+  .card:hover {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.678) !important; 
+  }
+
 #myBtn:hover {
-    background-color: rgb(136, 1, 226);
-    /* Add a dark-grey background on hover */
+    animation-name: reverse; /* the name of the animation */
+    animation-duration: 0.7s; /* this is the length of the animation */   
+     /* reverse the button's gradient when it's hovered and make the colors go from left to right */
 }
 
 #foot-text {
